@@ -1,0 +1,16 @@
+https://stggdwlxsldonuhrxbhx.supabase.co - PROJECT URL
+
+sb_publishable_jGFVEdoM1QtTFqIOsUc99w_K2reKUqX - PUBLISHABLE KEY
+
+stggdwlxsldonuhrxbhx - project id
+
+Secret keys - sb_secret_eg8b6BYvDai5NLholFQ7yw_DPLZW2BU
+These API keys allow privileged access to your project's APIs. Use in servers, functions, workers or other backend components of your application.
+
+anon public - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN0Z2dkd2x4c2xkb251aHJ4Ymh4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgwNDU4ODIsImV4cCI6MjA5MzYyMTg4Mn0.DWmZi3GM4dfc06QhASziazbsXy8Qr14ieCEAXdpmj1c
+
+service_role secret - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN0Z2dkd2x4c2xkb251aHJ4Ymh4Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3ODA0NTg4MiwiZXhwIjoyMDkzNjIxODgyfQ.641AiX7-TR4S41CJ0AQLxZaj7LC-7aS1gWPeHCXCINc
+
+acess token - sbp_4744a6a2f87a82954ed61b839c2918992ccd63a7
+
+GRQO API : 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
