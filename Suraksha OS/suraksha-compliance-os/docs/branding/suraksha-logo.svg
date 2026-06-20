@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="120" viewBox="0 0 520 120" role="img" aria-label="Suraksha OS">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#051424"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#b0c6ff"/>
+      <stop offset="100%" style="stop-color:#568dff"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="120" rx="16" fill="url(#bg)" stroke="#273647" stroke-width="1.5"/>
+  <!-- shield icon -->
+  <path d="M48 28 L48 58 Q48 82 72 92 Q96 82 96 58 L96 28 Q72 20 48 28 Z" fill="url(#shield)" opacity="0.95"/>
+  <path d="M60 44 L84 44 M72 44 L72 72 M60 60 L84 60" stroke="#051424" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+  <text x="118" y="52" fill="#e8eef8" font-family="system-ui, Segoe UI, sans-serif" font-size="28" font-weight="700">Suraksha OS</text>
+  <text x="118" y="78" fill="#8c90a1" font-family="system-ui, Segoe UI, sans-serif" font-size="13" font-weight="600" letter-spacing="0.12em">AI COMPLIANCE OPERATING SYSTEM</text>
+  <text x="118" y="100" fill="#568dff" font-family="system-ui, Segoe UI, sans-serif" font-size="11">Obligations | Drift | Evidence | Readiness</text>
+</svg>
