@@ -1,0 +1,27 @@
+# Normalize line endings: store text as LF, check out native — silences CRLF warnings.
+* text=auto eol=lf
+
+# Scripts that must keep their platform line endings
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+*.sh   text eol=lf
+
+# Treat these as binary (no diff/merge, no EOL conversion)
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.mp4  binary
+*.webm binary
+*.mov  binary
+*.pdf  binary
+*.woff binary
+*.woff2 binary
+
+# Keep generated showcase assets out of GitHub language statistics
+docs/showcase/**     linguist-documentation
+samples/**           linguist-documentation
+*.gif                linguist-generated
