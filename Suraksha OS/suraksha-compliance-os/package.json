@@ -29,6 +29,7 @@
     "test:security": "node scripts/security-audit.cjs",
     "capture-ui": "node scripts/capture-ui.cjs",
     "capture-ui:docs": "node scripts/capture-ui.cjs",
+    "showcase": "node scripts/showcase-capture.cjs",
     "rasterize-logo": "node scripts/rasterize-logo.mjs"
   },
   "dependencies": {
@@ -60,6 +61,7 @@
     "zustand": "^5.0.13"
   },
   "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@playwright/test": "^1.51.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
