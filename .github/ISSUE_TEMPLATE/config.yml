@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: 🔒 Report a security vulnerability
-    url: https://github.com/prajwalbr0304/Suraksha-Private/security/advisories/new
+    url: https://github.com/prajwalbr0304/suraksha-agentic-compliance/security/advisories/new
     about: Please report security issues privately, not as public issues.

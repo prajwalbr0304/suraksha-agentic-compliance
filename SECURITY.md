@@ -8,7 +8,7 @@ Suraksha OS handles regulatory and compliance data, so we take security seriousl
 
 Instead, report privately via one of:
 
-- GitHub's [private vulnerability reporting](https://github.com/prajwalbr0304/Suraksha-Private/security/advisories/new) (Security → Report a vulnerability), or
+- GitHub's [private vulnerability reporting](https://github.com/prajwalbr0304/suraksha-agentic-compliance/security/advisories/new) (Security → Report a vulnerability), or
 - a direct message to the maintainer (**@prajwalbr0304**).
 
 Please include:

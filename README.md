@@ -25,11 +25,11 @@
 
 <div align="center">
 
-<video src="https://github.com/prajwalbr0304/Suraksha-Private/releases/download/showcase-assets/suraksha-demo.mp4" controls muted width="880"></video>
+<video src="https://github.com/prajwalbr0304/suraksha-agentic-compliance/releases/download/showcase-assets/suraksha-demo.mp4" controls muted width="880"></video>
 
 ![Suraksha OS demo](docs/showcase/video/suraksha-demo-preview.gif)
 
-*The looping preview above always renders; the embedded player shows the full **8-minute walkthrough**. ▶ [Watch / download the MP4](https://github.com/prajwalbr0304/Suraksha-Private/releases/download/showcase-assets/suraksha-demo.mp4) — every screen was captured live from the running app.*
+*The looping preview above always renders; the embedded player shows the full **8-minute walkthrough**. ▶ [Watch / download the MP4](https://github.com/prajwalbr0304/suraksha-agentic-compliance/releases/download/showcase-assets/suraksha-demo.mp4) — every screen was captured live from the running app.*
 
 </div>
 
