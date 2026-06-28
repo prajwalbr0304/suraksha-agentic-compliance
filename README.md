@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/00-public/01-landing.png" alt="Suraksha OS — AI Compliance Operating System" width="880" />
+<img src="docs/showcase/screenshots/00-public/01-landing.png" alt="Suraksha OS — AI Compliance Operating System" width="880" />
 
 # 🛡️ Suraksha OS — The AI Compliance Operating System
 
@@ -13,6 +13,7 @@
 [![Supabase](https://img.shields.io/badge/Supabase-Postgres%20%2B%20RLS%20%2B%20pgvector-3FCF8E?logo=supabase&logoColor=white)](https://supabase.com/)
 [![Google ADK](https://img.shields.io/badge/Agents-Google%20ADK%20%2B%20Gemini-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
 [![FastAPI](https://img.shields.io/badge/Agent%20Service-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-D22128?logo=apache&logoColor=white)](LICENSE)
 
 </div>
 
@@ -24,9 +25,9 @@
 
 <div align="center">
 
-![Suraksha OS demo](Suraksha%20OS/suraksha-compliance-os/docs/showcase/video/suraksha-demo-preview.gif)
+![Suraksha OS demo](docs/showcase/video/suraksha-demo-preview.gif)
 
-**▶ [Watch the full 8-minute walkthrough (MP4)](Suraksha%20OS/suraksha-compliance-os/docs/showcase/video/suraksha-demo.mp4)**  ·  every screen below was captured live from the running app.
+**▶ [Watch the full 8-minute walkthrough (MP4)](docs/showcase/video/suraksha-demo.mp4)**  ·  every screen below was captured live from the running app.
 
 </div>
 
@@ -72,7 +73,7 @@ Humans stay in control through approval gates, while the AI does the busywork. T
 
 <div align="center">
 
-![AI Agents control center](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/09-agents.png)
+![AI Agents control center](docs/showcase/screenshots/founder/09-agents.png)
 
 *The live agent control center: fleet status, the running pipeline, the activity timeline, and recent coordinator runs.*
 
@@ -263,40 +264,40 @@ The founder console (`/founder/**`) is the platform control plane — manage eve
 
 | Founder dashboard | Organizations (all banks) | Platform users |
 |---|---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/01-dashboard.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/02-organizations.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/04-users.png) |
+| ![](docs/showcase/screenshots/founder/01-dashboard.png) | ![](docs/showcase/screenshots/founder/02-organizations.png) | ![](docs/showcase/screenshots/founder/04-users.png) |
 
 | Managers | Access control | Cross-tenant analytics |
 |---|---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/03-managers.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/05-access-control.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/06-analytics.png) |
+| ![](docs/showcase/screenshots/founder/03-managers.png) | ![](docs/showcase/screenshots/founder/05-access-control.png) | ![](docs/showcase/screenshots/founder/06-analytics.png) |
 
 **Drill into a single bank** — the founder gets the same rich modules scoped to that tenant:
 
 | Bank overview | Knowledge graph | Compliance Action Board |
 |---|---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-01-overview.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-06-knowledge-graph.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-05-map-board.png) |
+| ![](docs/showcase/screenshots/founder/org-01-overview.png) | ![](docs/showcase/screenshots/founder/org-06-knowledge-graph.png) | ![](docs/showcase/screenshots/founder/org-05-map-board.png) |
 
 <details>
 <summary><b>More founder views (reports · audit trail · settings · per-bank obligations, drift, readiness, evidence, impact, security, users, teams, departments, access)</b></summary>
 
 | Reports | Audit trail | Settings |
 |---|---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/07-reports.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/08-audit-trail.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/10-settings.png) |
+| ![](docs/showcase/screenshots/founder/07-reports.png) | ![](docs/showcase/screenshots/founder/08-audit-trail.png) | ![](docs/showcase/screenshots/founder/10-settings.png) |
 
 | Obligations | Documents | Drift |
 |---|---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-02-obligations.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-03-documents.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-07-drift.png) |
+| ![](docs/showcase/screenshots/founder/org-02-obligations.png) | ![](docs/showcase/screenshots/founder/org-03-documents.png) | ![](docs/showcase/screenshots/founder/org-07-drift.png) |
 
 | Readiness | Evidence | Impact |
 |---|---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-08-readiness.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-09-evidence.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-10-impact.png) |
+| ![](docs/showcase/screenshots/founder/org-08-readiness.png) | ![](docs/showcase/screenshots/founder/org-09-evidence.png) | ![](docs/showcase/screenshots/founder/org-10-impact.png) |
 
 | Security findings | Users | Teams |
 |---|---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-11-security-findings.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-13-users.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-14-teams.png) |
+| ![](docs/showcase/screenshots/founder/org-11-security-findings.png) | ![](docs/showcase/screenshots/founder/org-13-users.png) | ![](docs/showcase/screenshots/founder/org-14-teams.png) |
 
 | Departments | Access | Audit (per bank) |
 |---|---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-15-departments.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-16-access.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/founder/org-12-audit.png) |
+| ![](docs/showcase/screenshots/founder/org-15-departments.png) | ![](docs/showcase/screenshots/founder/org-16-access.png) | ![](docs/showcase/screenshots/founder/org-12-audit.png) |
 
 </details>
 
@@ -311,58 +312,58 @@ Drag in a circular and the pipeline ingests, parses and extracts obligations aut
 
 | Upload | Documents |
 |---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/07-upload.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/08-documents.png) |
+| ![](docs/showcase/screenshots/manager/07-upload.png) | ![](docs/showcase/screenshots/manager/08-documents.png) |
 
 ### 🏛 Regulation Center & Obligations
 A monitored inbox of regulator sources, and the obligations extracted from them.
 
 | Regulation Center | Obligations |
 |---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/09-regulation-center.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/10-obligations.png) |
+| ![](docs/showcase/screenshots/manager/09-regulation-center.png) | ![](docs/showcase/screenshots/manager/10-obligations.png) |
 
 ### ✅ Compliance Action Board (MAPs)
 AI suggests Measurable Action Points; managers govern with approve / reject / assign, drag across stages, and validation runs on items under review.
 
-![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/11-map-board.png)
+![](docs/showcase/screenshots/manager/11-map-board.png)
 
 ### 🕸 Knowledge Graph
 The explainability layer — regulation → document → obligation → MAP → department → owner → evidence, with live updates.
 
-![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/13-knowledge-graph.png)
+![](docs/showcase/screenshots/manager/13-knowledge-graph.png)
 
 ### 🔀 Regulatory Change Analysis (Drift) & Readiness
 Surface exactly what changed between circular versions, and score audit readiness.
 
 | Drift | Readiness |
 |---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/14-drift.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/15-readiness.png) |
+| ![](docs/showcase/screenshots/manager/14-drift.png) | ![](docs/showcase/screenshots/manager/15-readiness.png) |
 
 ### 📎 Evidence & ⚡ Impact
 Collect audit evidence against each MAP, and simulate the operational impact of a change.
 
 | Evidence | Impact analysis |
 |---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/16-evidence.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/17-impact.png) |
+| ![](docs/showcase/screenshots/manager/16-evidence.png) | ![](docs/showcase/screenshots/manager/17-impact.png) |
 
 ### 🛡 Security Findings · 📊 Analytics · 📄 Reports · 🧾 Audit Trail
 
 | Security findings | Risk & Analytics |
 |---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/18-security-findings.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/22-analytics.png) |
+| ![](docs/showcase/screenshots/manager/18-security-findings.png) | ![](docs/showcase/screenshots/manager/22-analytics.png) |
 
 | Reports | My tasks |
 |---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/19-reports.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/12-my-tasks.png) |
+| ![](docs/showcase/screenshots/manager/19-reports.png) | ![](docs/showcase/screenshots/manager/12-my-tasks.png) |
 
 ### ⚙️ Administration (Users · Departments · Teams · Access · Settings)
 
 | Users | Departments | Teams |
 |---|---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/23-admin-users.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/24-admin-departments.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/25-admin-teams.png) |
+| ![](docs/showcase/screenshots/manager/23-admin-users.png) | ![](docs/showcase/screenshots/manager/24-admin-departments.png) | ![](docs/showcase/screenshots/manager/25-admin-teams.png) |
 
 | Access control | Settings |
 |---|---|
-| ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/26-admin-access.png) | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/manager/21-settings.png) |
+| ![](docs/showcase/screenshots/manager/26-admin-access.png) | ![](docs/showcase/screenshots/manager/21-settings.png) |
 
 ---
 
@@ -372,13 +373,13 @@ Each persona below was logged in for real and crawled across every route — pro
 
 | Role | Signature view |
 |------|----------------|
-| **Compliance Analyst** — *Priya Shah* | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/roles/compliance-analyst/02-dashboard-compliance.png) |
-| **Security Team** — *Alex Chen* | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/roles/security-team/18-security-findings.png) |
-| **IT Owner** — *Sam Lee* | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/roles/it-owner/11-map-board.png) |
-| **Internal Auditor** — *Jordan Kim* | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/roles/internal-auditor/04-dashboard-audit.png) |
-| **Executive Viewer** — *Riley Park* | ![](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/roles/executive-viewer/03-dashboard-executive.png) |
+| **Compliance Analyst** — *Priya Shah* | ![](docs/showcase/screenshots/roles/compliance-analyst/02-dashboard-compliance.png) |
+| **Security Team** — *Alex Chen* | ![](docs/showcase/screenshots/roles/security-team/18-security-findings.png) |
+| **IT Owner** — *Sam Lee* | ![](docs/showcase/screenshots/roles/it-owner/11-map-board.png) |
+| **Internal Auditor** — *Jordan Kim* | ![](docs/showcase/screenshots/roles/internal-auditor/04-dashboard-audit.png) |
+| **Executive Viewer** — *Riley Park* | ![](docs/showcase/screenshots/roles/executive-viewer/03-dashboard-executive.png) |
 
-> Full per-role galleries (every accessible tab for every persona) live under [`docs/showcase/screenshots/roles/`](Suraksha%20OS/suraksha-compliance-os/docs/showcase/screenshots/roles/).
+> Full per-role galleries (every accessible tab for every persona) live under [`docs/showcase/screenshots/roles/`](docs/showcase/screenshots/roles/).
 
 ---
 
@@ -401,7 +402,7 @@ Core tenant-scoped tables the agents read and write (all keyed by `organization_
 
 `organizations` · `profiles` · `memberships` · `departments` · `teams` · `regulatory_sources` · `regulatory_changes` · `documents` · `obligations` · `map_cards` · `escalations` · `evidence` · `readiness_scores` · `drift_comparisons` · `impact_simulations` · `audit_trail` · `audit_exports` · `agent_runs` · `agent_events` · regulation embeddings (`pgvector`).
 
-Schema and incremental migrations live in [`supabase/migrations/`](Suraksha%20OS/suraksha-compliance-os/supabase/migrations/).
+Schema and incremental migrations live in [`supabase/migrations/`](supabase/migrations/).
 
 ---
 
@@ -457,6 +458,12 @@ It uses Playwright for capture and a bundled `@ffmpeg-installer/ffmpeg` binary t
 - **Tenant isolation** by `organization_id` on every query and every agent task.
 - **Secret-scoped agent service** — mutating endpoints require a shared `X-Agent-Secret`.
 - **Audit-logged** — agent and user actions land in `audit_trail` / `agent_events` with full provenance.
+
+---
+
+## 📄 License
+
+Released under the **Apache License 2.0** — see [`LICENSE`](LICENSE). You are free to use, modify, and distribute this work with attribution; it is provided "as is", without warranty.
 
 ---
 
