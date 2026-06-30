@@ -438,6 +438,12 @@ Point the app at the service via `AGENT_SERVICE_URL` and `AGENT_SHARED_SECRET` i
 
 > **Never commit real credentials.** `.env`, `.env.local`, and `agent-service/.env` are git-ignored.
 
+### 3) Hugging Face demo deployment
+
+This repo includes a Docker Space setup (`Dockerfile`) and a GitHub Actions workflow (`.github/workflows/deploy-huggingface.yml`) that publishes the demo to Hugging Face Spaces. The Docker Space runs the Next.js app on port `7860` and the Python FastAPI agent service internally on `127.0.0.1:8088`.
+
+See [`docs/HUGGINGFACE_DEPLOYMENT.md`](docs/HUGGINGFACE_DEPLOYMENT.md) for the required `HF_TOKEN`, `HF_SPACE_ID`, Supabase, and optional agent-service secrets. The live app URL will be `https://huggingface.co/spaces/<owner>/<space-name>` and the direct runtime URL will be `https://<owner>-<space-name>.hf.space`.
+
 ---
 
 ## 🎬 Reproducing this showcase

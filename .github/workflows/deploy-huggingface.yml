@@ -1,0 +1,91 @@
+name: Deploy to Hugging Face Space
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: huggingface-space-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Build and publish Docker Space
+    runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co' }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-anon-key' }}
+      NEXT_PUBLIC_SUPABASE_DOCUMENTS_BUCKET: ${{ secrets.NEXT_PUBLIC_SUPABASE_DOCUMENTS_BUCKET || 'compliance-documents' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type-check
+        run: npx tsc --noEmit
+
+      - name: Build
+        run: npm run build
+
+      - name: Prepare Space repository
+        run: |
+          mkdir -p hf-space
+          rsync -a --delete \
+            --exclude '.git' \
+            --exclude 'hf-space' \
+            --exclude 'node_modules' \
+            --exclude '.next' \
+            --exclude '.vercel' \
+            --exclude 'coverage' \
+            --exclude 'test-results' \
+            --exclude 'playwright-report' \
+            --exclude '.env' \
+            --exclude '.env.local' \
+            --exclude '.env*.local' \
+            ./ hf-space/
+          cat > hf-space/README.md <<'EOF'
+          ---
+          title: Suraksha OS
+          emoji: 🛡️
+          colorFrom: blue
+          colorTo: green
+          sdk: docker
+          pinned: false
+          ---
+
+          # Suraksha OS
+
+          Docker Space for the Suraksha agentic compliance demo.
+
+          Source: https://github.com/${{ github.repository }}
+          EOF
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE_ID: ${{ secrets.HF_SPACE_ID }}
+        run: |
+          if [ -z "$HF_TOKEN" ] || [ -z "$HF_SPACE_ID" ]; then
+            echo "Missing HF_TOKEN or HF_SPACE_ID GitHub secret." >&2
+            exit 1
+          fi
+          cd hf-space
+          git init
+          git config user.email "actions@github.com"
+          git config user.name "github-actions"
+          git add .
+          git commit -m "Deploy Suraksha OS to Hugging Face Space"
+          git branch -M main
+          git remote add space "https://oauth2:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE_ID}"
+          git push --force space main
