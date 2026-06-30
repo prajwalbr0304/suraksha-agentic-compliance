@@ -50,12 +50,23 @@ jobs:
             --exclude 'coverage' \
             --exclude 'test-results' \
             --exclude 'playwright-report' \
-            --exclude 'docs/showcase/video/*.mp4' \
-            --exclude 'docs/showcase/video/*.gif' \
+            --exclude 'docs/showcase' \
+            --exclude 'docs/ui-screenshots' \
+            --exclude 'docs/branding/*.png' \
+            --exclude 'samples' \
             --exclude '.env' \
             --exclude '.env.local' \
             --exclude '.env*.local' \
             ./ hf-space/
+          find hf-space -type f \( \
+            -iname '*.png' -o \
+            -iname '*.jpg' -o \
+            -iname '*.jpeg' -o \
+            -iname '*.gif' -o \
+            -iname '*.mp4' -o \
+            -iname '*.pdf' -o \
+            -iname '*.ico' \
+          \) -delete
           cat > hf-space/README.md <<'EOF'
           ---
           title: Suraksha OS
