@@ -50,6 +50,8 @@ jobs:
             --exclude 'coverage' \
             --exclude 'test-results' \
             --exclude 'playwright-report' \
+            --exclude 'docs/showcase/video/*.mp4' \
+            --exclude 'docs/showcase/video/*.gif' \
             --exclude '.env' \
             --exclude '.env.local' \
             --exclude '.env*.local' \
