@@ -54,6 +54,12 @@ In the Space -> Settings -> Variables and secrets, add the runtime values:
 Do not put `SUPABASE_SERVICE_ROLE_KEY` in a public variable. It must be a Space
 secret.
 
+The `NEXT_PUBLIC_*` values must exist before the Space Docker image builds.
+The Dockerfile reads them as Hugging Face build secrets during `next build`, so
+restart/rebuild the Space after changing them. If they are missing during build,
+the login page may render but browser auth calls will fail because the client
+bundle was built with placeholder Supabase values.
+
 Without Supabase secrets, the public landing page can load but authenticated
 workflows and API routes cannot read/write product data. Without `GEMINI_API_KEY`
 or a reachable local LLM, the agent health endpoint works but live agent runs are

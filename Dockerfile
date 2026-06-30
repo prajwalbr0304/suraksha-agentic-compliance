@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1.4
+
 FROM node:20-slim AS deps
 WORKDIR /app
 
@@ -21,7 +23,13 @@ ENV NEXT_PUBLIC_SUPABASE_DOCUMENTS_BUCKET=${NEXT_PUBLIC_SUPABASE_DOCUMENTS_BUCKE
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm run build
+RUN --mount=type=secret,id=NEXT_PUBLIC_SUPABASE_URL,required=false \
+  --mount=type=secret,id=NEXT_PUBLIC_SUPABASE_ANON_KEY,required=false \
+  --mount=type=secret,id=NEXT_PUBLIC_SUPABASE_DOCUMENTS_BUCKET,required=false \
+  NEXT_PUBLIC_SUPABASE_URL="$(cat /run/secrets/NEXT_PUBLIC_SUPABASE_URL 2>/dev/null || echo "$NEXT_PUBLIC_SUPABASE_URL")" \
+  NEXT_PUBLIC_SUPABASE_ANON_KEY="$(cat /run/secrets/NEXT_PUBLIC_SUPABASE_ANON_KEY 2>/dev/null || echo "$NEXT_PUBLIC_SUPABASE_ANON_KEY")" \
+  NEXT_PUBLIC_SUPABASE_DOCUMENTS_BUCKET="$(cat /run/secrets/NEXT_PUBLIC_SUPABASE_DOCUMENTS_BUCKET 2>/dev/null || echo "$NEXT_PUBLIC_SUPABASE_DOCUMENTS_BUCKET")" \
+  npm run build
 
 FROM node:20-slim AS runner
 WORKDIR /app
